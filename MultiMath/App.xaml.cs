@@ -1,4 +1,5 @@
 ﻿using System;
+using MultiMath.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace MultiMath
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MultiPage();
         }
 
         protected override void OnStart()
