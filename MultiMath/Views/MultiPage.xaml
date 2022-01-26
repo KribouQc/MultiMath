@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MultiMath.Views.MultiPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Spacing="0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Label Text="?"
+                       x:Name="number1"
+                       FontSize="70"
+                       TextColor="white"/>
+                <Label Text="X"
+                       FontSize="70"
+                       TextColor="white"/>
+                <Label Text="?"
+                       x:Name="number2"
+                       FontSize="70"
+                       TextColor="white"/>
+            </StackLayout>
+
+            <Label Text="="
+                   HorizontalTextAlignment="Center"
+                   FontSize="70"
+                   TextColor="white"/>
+
+            <Entry x:Name="ResultatEntry"
+                   Placeholder="?"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Center"
+                   FontSize="70"/>
+
+            <Button Text="Valider"
+                    Clicked="Valider_Clicked"
+                    WidthRequest="120"
+                    BackgroundColor="{StaticResource buttonColor}"
+                    TextColor="{StaticResource fontButtonColor}"
+                    Margin="0,20,0,0"/>
+
+        </StackLayout>
+        
+
+
+    </ContentPage.Content>
+</ContentPage>
